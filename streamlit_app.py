@@ -9,6 +9,27 @@ from dotenv import load_dotenv
 import requests
 import os
 
+# Set page configuration and customizations
+st.set_page_config(
+    page_title='Britannia RAG App',
+    page_icon=':british_flag:', 
+    layout='wide',
+    initial_sidebar_state='expanded',
+)
+
+# Custom CSS for background color and text color
+st.markdown(
+    """
+    <style>
+    body {
+        background-color: #f0f0f5;
+        color: #333333;
+    }
+    </style>
+    """,
+    unsafe_allow_html=True,
+)
+
 # Load environment variables from .env file
 os.environ["HUGGINGFACE_TOKEN"] == st.secrets["HUGGINGFACE_TOKEN"]
 
@@ -67,26 +88,6 @@ def generate_response(uploaded_file, query_text):
         
         return ans
 
-# Set page configuration and customizations
-st.set_page_config(
-    page_title='Britannia RAG App',
-    page_icon=':british_flag:', 
-    layout='wide',
-    initial_sidebar_state='expanded',
-)
-
-# Custom CSS for background color and text color
-st.markdown(
-    """
-    <style>
-    body {
-        background-color: #f0f0f5;
-        color: #333333;
-    }
-    </style>
-    """,
-    unsafe_allow_html=True,
-)
 
 # Display Britannia logo at the top
 britannia_logo_url = 'https://zeevector.com/wp-content/uploads/Britannia-Logo-PNG@ZEEVECTOR.png'
