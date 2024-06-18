@@ -10,3 +10,4 @@ bitsandbytes
 huggingface-hub
 langchain-community 
 transformers
+sentence-transformers
