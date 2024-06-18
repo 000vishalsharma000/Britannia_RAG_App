@@ -10,7 +10,7 @@ import requests
 import os
 
 # Load environment variables from .env file
-load_dotenv()
+os.environ["HUGGINGFACE_TOKEN"] == st.secrets["HUGGINGFACE_TOKEN"]
 
 # Hugging Face API endpoint and headers
 # API_URL = "https://api-inference.huggingface.co/models/microsoft/Phi-3-mini-4k-instruct"
