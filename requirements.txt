@@ -1,0 +1,12 @@
+streamlit
+langchain
+openai
+chromadb
+tiktoken
+PyPDF2
+torch
+python-dotenv
+bitsandbytes
+huggingface-hub
+langchain-community 
+transformers
